@@ -70,7 +70,8 @@ var pass_1:passport?
 
 let Str_date: String = "2016-05-23"
 var Formatter = DateFormatter()
-Formatter.dateFormat = "yy-mm-dd"
+Formatter.dateFormat = "yyyy-mm-dd"
+//Formatter.timeStyle = .none
 var date_of_registr = Formatter.date(from: Str_date)
 
 alex = person(name: "Алексей", surname: "Станков", patronymic: "Викторович", age: 20)
@@ -80,7 +81,7 @@ alex?.passport = pass_1
 pass_1?.person = alex
 
 print(alex!.FIO)
-print(pass_1!.date)
+print(Formatter.string(from: pass_1!.date))
 
 alex = nil
 pass_1 = nil
