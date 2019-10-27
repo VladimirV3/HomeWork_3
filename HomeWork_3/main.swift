@@ -77,7 +77,7 @@ let dateOfReg = Formatter.date(from: Str_date)
 alex = Person(name: "Алексей", surname: "Станков", patronymic: "Викторович", age: 20)
 
 if let unwrappedDateOfReg = dateOfReg {
-    pass1 = Passport(series: "BH", serial_number: 123123, date: unwrappedDateOfReg)
+    pass1 = Passport(series: "BH", serialNumber: 123123, date: unwrappedDateOfReg)
 }
 else {
     print ("Error 304")
