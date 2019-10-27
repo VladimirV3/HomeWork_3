@@ -53,9 +53,9 @@ class Passport {
     var date: Date
     var person: Person?
     
-    init (series: String, serial_number: Int, date: Date) {
+    init (series: String, serialNumber: Int, date: Date) {
         self.series = series
-        self.serialNumber = serial_number
+        self.serialNumber = serialNumber
         self.date = date
     }
     
